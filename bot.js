@@ -25,6 +25,7 @@ client.on('message', message => {
 
 client.on('message', msg => {
   if (msg.content === 'Hi') { msg.reply('Hi');}
+    if (msg.content === 'hi') { msg.reply('hi');}
   if (msg.content === 'ten k') { msg.reply('anh đây');}
   if (msg.content === "đm") { msg.reply('bậy nè');}
   if (msg.content === "ai hay thủ dâm") { msg.reply('Là bạn đó');}
@@ -66,7 +67,15 @@ client.on("message", (message) => {
  if (message.content.startsWith("meo meo")) {message.channel.send("Gâu gâu");}
  if (message.content.startsWith("em thích ai")) {message.channel.send("em thích trai kỹ thuật, họ mạnh mẽ và đầy nam tính");}
  if (message.content.startsWith("info")) {message.channel.send({embed});}
+    if (message.content.startsWith("alo")) {message.channel.send("lô cc");}
+    if (message.content.startsWith("a lo")) {message.channel.send("lô cc");}
+    if (message.content.startsWith("ALo")) {message.channel.send("lô cc");}
+    if (message.content.startsWith("A lo")) {message.channel.send("lô cc");}
  if (message.content.startsWith("hello")) {message.channel.send("lô cc");}
+ if (message.content.startsWith("Halo")) {message.channel.send("lô cc");}
+    if (message.content.startsWith("Ha lo")) {message.channel.send("lô cc");}
+    if (message.content.startsWith("halo")) {message.channel.send("lô cc");}
+    if (message.content.startsWith("ha lo")) {message.channel.send("lô cc");}
  if (message.content.startsWith("Hello")) {message.channel.send("lô cc");}
  if (message.content.startsWith("helo")) {message.channel.send("lô cc");}
  if (message.content.startsWith("Helo")) {message.channel.send("lô cc");}
