@@ -1,20 +1,15 @@
 const Discord = require('discord.js');
-
 const client = new Discord.Client();
 
- 
-
 client.on('ready', () => {
-
     console.log('I am ready!');
-
 });
 
- 
  client.on("guildCreate", guild => {
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
   client.user.setActivity(`Serving ${client.guilds.size} servers`);
 });
+
 client.on("guildDelete", guild => {
   console.log(`I have been removed from: ${guild.name} (id: ${guild.id})`);
   client.user.setActivity(`Serving ${client.guilds.size} servers`);
@@ -67,6 +62,7 @@ const embed = new Discord.RichEmbed()
   .addField("Address", "Sao Hỏa", true);
 
 client.on("message", (message) => {
+ 
  if (message.content.startsWith("meo meo")) {message.channel.send("Gâu gâu");}
  if (message.content.startsWith("em thích ai")) {message.channel.send("em thích trai kỹ thuật, họ mạnh mẽ và đầy nam tính");}
  if (message.content.startsWith("info")) {message.channel.send({embed});}
@@ -95,7 +91,6 @@ client.on("message", (message) => {
  
  
  
-
 
 // THIS  MUST  BE  THIS  WAY
 
